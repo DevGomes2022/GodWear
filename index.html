@@ -4,31 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" href="favis/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/index.css">
     <title>GodWear - Seja Bem Vindo!</title>
 </head>
 <body>
     <div class="container">
-        <div class="banner">
-            <div class="box-banner">
-                <h1>GodWear</h1>
-                <p>GodWear é um MMORPG 2d online, contendo diversas missões relacionadas a história onde se encontra o game!</p>
-                <div class="btn-jogar">
-                    <a href="#">Jogar</a>
+        <header id="cor">
+            <div class="menu">
+                <div class="menu-logo">
+                    <h1>GodWear</h1>
+                </div>
+                <div class="menu-pc">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cadastrar">Cadastrar</a></li>
+                    </ul>
+                </div>
+                <div class="menu-btn" onclick="menuShow()">
+                    <img src="imgs/menu-barra.png" id="menu-btn-a" class="menu-btn-a" alt="">
+                    <!--<img src="imgs/menu-x.png" id="menu-btn-b" class="menu-btn-b" alt="">-->
+                </div>
+                <div class="menu-mobile">
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cadastrar">Cadastrar</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="dsn">
-                <img src="gifs/casa.gif" alt="">
+        </header>
+        <div class="banner" id="inicio">
+            <div class="banner-menor">
+                <div class="box-banner">
+                    <h1>GodWear</h1>
+                    <p>GodWear é um jogo 2d online, onde você pode aprimorar suas habilidades, desvendar os mistérios que estão pelo mundo!</p>
+                    <div class="btn-jogar">
+                        <a href="#" class="btn-jogar_a">Jogar</a>
+                        <a href="#" class="btn-jogar_b">Mais sobre</a>
+                    </div>
+                </div>
+                <div class="dsn">
+                    <img src="gifs/casa.gif" alt="">
+                </div>
             </div>
             <div class="redes">
                 <ul>
-                    <li><a href="#"><img src="redes/Instagram.png" alt=""></a></li>
-                    <li><a href="#"><img src="redes/Facebook.png" alt=""></a></li>
-                    <li><a href="#"><img src="redes/Twiter.png" alt=""></a></li>
+                    <li><a href="#"><img src="redes/facebook branco.png" alt="Logo facebook"></a></li>
+                    <li><a href="#"><img src="redes/instagram branco.png" alt="Logo instagram"></a></li>
+                    <li><a href="#"><img src="redes/twitter branco.png" alt="Logo twitter"></a></li>
+                    <li><a href="#"><img src="redes/discord branco.png" alt="Logo discord"></a></li>
                 </ul>
+            </div>
+            <div id="btnTop">
+                <img src="imgs/seta-cima.png" alt="">
             </div>
         </div>
     </div>
+    <script src="menumobile.js"></script>
+    <script src="scrolmenu.js"></script>
+    <script src="scroltop.js"></script>
 </body>
 </html>
